@@ -1,10 +1,10 @@
-# 🧠 The "GF-Dared-Me" Brainfuck Compiler
+# The "GF-Dared-Me" Brainfuck Compiler
 
 So, my girlfriend dared me to do this. After building a Pi calculator and a SAT solver from scratch on her previous dares, Challenge #3 was the big one: **Write a highly efficient Brainfuck-to-x86_64 compiler.** 
 
 No interpreters. No LLVM shortcuts. No external libraries. Just pure, unadulterated C++ turning esoteric code into raw, optimized assembly.
 
-## 🚀 The "From Scratch" Flex
+## The "From Scratch" Flex
 
 I didn't just map BF symbols to instructions. I built a full-blown compilation pipeline:
 
@@ -20,7 +20,7 @@ I didn't just map BF symbols to instructions. I built a full-blown compilation p
     *   **Zero Dependencies:** No `libc`. No `printf`. Just raw **Linux Syscalls** (`rax=1`, `rax=60`).
     *   **Spec Compliant:** Strictly adheres to the **30,000 cell** limit.
 
-## 🛠 Building & Running
+## Building & Running
 
 You'll need `g++` (C++20), `nasm`, and `ld`.
 
@@ -35,11 +35,11 @@ make
 ./mandelbrot
 ```
 
-## 📊 Performance
+## Performance
 
 The result? The famous **Mandelbrot fractal viewer** (a massive 11KB BF file) compiles and runs in **~0.6s**. Most interpreters are still thinking about the first pixel while this thing is already finished.
 
-## 📂 Project Structure
+## Project Structure
 
 - `src/main.cpp`: The entry point and CLI.
 - `src/lexer.cpp`: Turns text into our `ActionPlan`.
@@ -47,4 +47,4 @@ The result? The famous **Mandelbrot fractal viewer** (a massive 11KB BF file) co
 - `src/codegen.cpp`: The assembly artist that writes the `.s` file.
 - `src/ir.hpp`: Definition of our custom intermediate language.
 
-**Challenge Accepted. Challenge Completed.** ✌️
+**Challenge Accepted. Challenge Completed.**
