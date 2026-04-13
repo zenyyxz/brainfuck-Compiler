@@ -1,8 +1,6 @@
-# The "GF-Dared-Me" Brainfuck Compiler
+# The High-Performance Brainfuck Compiler
 
-So, my girlfriend dared me to do this. After building a Pi calculator and a SAT solver from scratch on her previous dares, Challenge #3 was the big one: **Write a highly efficient Brainfuck-to-x86_64 compiler.** 
-
-No interpreters. No LLVM shortcuts. No external libraries. Just pure, unadulterated C++ turning esoteric code into raw, optimized assembly.
+This project is a highly efficient **Brainfuck-to-x86_64 compiler** written from scratch. After building a Pi calculator and a SAT solver, this was the next logical step: turning esoteric code into raw, optimized assembly without using interpreters, LLVM shortcuts, or external libraries.
 
 ## The "From Scratch" Flex
 
@@ -46,5 +44,3 @@ The result? The famous **Mandelbrot fractal viewer** (a massive 11KB BF file) co
 - `src/optimizer.cpp`: The heavy lifter that makes the code fast.
 - `src/codegen.cpp`: The assembly artist that writes the `.s` file.
 - `src/ir.hpp`: Definition of our custom intermediate language.
-
-**Challenge Accepted. Challenge Completed.**

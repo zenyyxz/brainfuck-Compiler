@@ -11,9 +11,9 @@
 #include "codegen.hpp"
 
 /**
- * Welcome to the Brainfuck-to-x86-64 Compiler!
- * This was a fun challenge to build a "real" compiler that produces
- * optimized machine code from a seemingly simple language.
+ * Welcome to the High-Performance Brainfuck-to-x86-64 Compiler!
+ * This project focuses on generating optimized machine code
+ * from a seemingly simple language.
  */
 
 int main(int argc, char* argv[]) {
